@@ -1,1 +1,25 @@
-//stuff goes here
+@import "../../styles/variables";
+
+nav {
+    background-color: $lightgray;
+    box-shadow: $box-shadow;
+
+    .brand-logo {
+        @include default-font(2em);
+  }
+  ul {
+    list-style-type: none;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+
+    li {
+      @include default-font(15px);
+      padding: 1.5px 10px;
+    }
+
+    li:hover {
+      background-color: $darkgray;
+    }
+  }
+}
