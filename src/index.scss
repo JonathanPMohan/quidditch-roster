@@ -3,4 +3,12 @@
 
 body {
   background-color: $darkgray;
+
+  #button-container {
+    margin-top: 100px;
+  }
+  #main-container {
+    flex-direction: row;
+      flex-wrap: wrap;
+  }
 }
