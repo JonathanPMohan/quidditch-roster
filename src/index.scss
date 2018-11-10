@@ -1,5 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./styles/variables";
 
 body {
-  background-color: grey;
+  background-color: $darkgray;
+
+  #button-container {
+    margin-top: 100px;
+  }
+}
+
+#main-container {
+  flex-direction: row;
+    flex-wrap: wrap;
 }
