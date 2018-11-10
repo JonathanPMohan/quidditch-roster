@@ -1,12 +1,29 @@
 @import "../../styles/variables";
 
 nav {
-    background-color: $lightgray;
-    box-shadow: $box-shadow;
+  background-color: $lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
 
-    .brand-logo {
-        @include default-font(2em);
+  // this means reference the parrent (& - in this case nav)
+  // and select any direct descendents (> - in this case the a tag and the ul tag)
+  & > * {
+    padding: 0 20px;
   }
+
+  .brand-logo {
+    @include default-font(2em);
+    height: 56px;
+    line-height: 56px;
+  }
+  
   ul {
     list-style-type: none;
     height: 56px;
